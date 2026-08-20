@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book club part 6</title>
+    <style>
+      body{
+        background-color: lightpink;
+        margin: 10px;
+      } 
+     .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto  ;
+        grid-template-areas:' header header header header header header header intro'
+        'nav nav nav nav  intro'
+       " main-section main-section main-section main-section main-section bestsellers"
+      }
+header{
+    grid-area:header ;
+background-color: orchid;
+}
+nav{
+  grid-area:nav ;
+  background-color: indigo;
+
+}
+#intro{
+   grid-area:nav ;
+  background-color: hotpink;  
+}
+    </style>
+</head>
+<body>
+  <div class="grid-container">
+<header>
+    <h1>book store</h1>
+    <p></p>
+</header>
+<nav>
+    <ol>
+        <ul>
+            <li><a href="">home</a></li>
+             <li><a href="">books</a></li>
+              <li><a href="">rewiews</a></li>
+        </ul>
+    </ol>
+</nav>
+<section id="intro">
+    <h2>welcome</h2>
+    <p>explore our horror thrilller comedy and dramas</p>
+</section>
+<main id="main section">
+<div>
+    <h2>our books</h2>
+    <p>rip van winkle</p>
+    <p>cats</p>
+    <p>the alchemist</p>
+    <p>harry potter</p>
+</div>
+</main>
+<section id="bestsellers">
+<h2>bestsellers</h2>
+<ol>
+    <li>rip van winkle</li>
+    <li>harry potter</li>
+</ol>
+</section>
+</div>  
+</body>
+</html>
