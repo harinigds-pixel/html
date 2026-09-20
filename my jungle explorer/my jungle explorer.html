@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>My jungle explorer</title>
+ 
+  <style>
+    body {
+      position: relative;
+    }
+
+    .jungle-slide {
+      height: 200px;
+      text-align: center;
+      padding-top: 75px;
+      font-size: 50px;
+      color: aqua;
+    }
+
+  
+    .slide-jungle {
+      background-color: rgb(73, 73, 162);
+    }
+
+     .slide-nature {
+      background-color: rgb(55, 148, 60);
+    }
+
+   
+    .slide-animals {
+      background-color: rgb(38, 25, 103);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="jungleCarousel" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#jungleCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#jungleCarousel" data-slide-to="1"></li>
+      <li data-target="#jungleCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active jungle-slide slide-jungle">
+        Jungle Safari
+      </div>
+      <div class="carousel-item jungle-slide slide-animals">
+        Animals Safari
+      </div>
+      <div class="carousel-item jungle-slide slide-nature">
+        Nature Safari
+      </div>
+    </div>
+
+    <!-- ❌ ISSUE: Controls referenced #natureCarousel (wrong ID).
+         ✅ FIX: Both controls now reference #jungleCarousel -->
+    <a class="carousel-control-prev" href="#jungleCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#jungleCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
