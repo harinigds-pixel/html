@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+.alert{
+    color: darkblue;
+    background-color: lightpink;
+padding: 5px;
+}
+    </style>
+</head>
+<body>
+   <h1 id="heading">welcome</h1> 
+   <p>hello</p>
+   <p>how are you ?</p>
+   <script>
+    let div = document.createElement("div")
+    div.id="paragraph";
+     div.className="alert";
+      div.innerHTML="<p>Congratulation! you have created divisions</p>";
+      document.body.append(div);
+      let heading=document.getElementById("heading");
+      heading.innerHTML="&#128512"
+      document.querySelector("header p").innerHTML="<strong>Good Job !</strong>"
+   </script>
+</body>
+</html>
