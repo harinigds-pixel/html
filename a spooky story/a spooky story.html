@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a spooky story</title>
+    <style>
+        body.dark{
+            color: golden;
+            background-color: darksalmon;
+        }
+        button{
+            display: block;
+            margin: 5px;
+        }
+        .textEntry{
+            margin-top: 12px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>the basement</h1>
+    <p id="story">I wanted to find my friend and he was hiding in  the basment</p>
+    <button onclick="dark()">get in the mood</button>
+    <div class="textEntry">type your name if you dare <input type="text" id="name"></div>
+     <button onclick="type()">please please dont click me</button>
+      <button onclick="finish()">tell me what happend</button>
+      <script>
+        function type(){
+            var personName=document.getElementById("name").value;
+           alert ("i told you not to do that"+personName)
+        }
+        function dark(){
+document.body.className="dark"
+}
+function finish(){
+    document.getElementById("story").innerHTML="So I carefully searched the damp dungeon.there you are ";
+}
+            </script>
+</body>
+</html>
