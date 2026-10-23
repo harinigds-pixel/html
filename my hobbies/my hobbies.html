@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a spooky story</title>
+    <style>
+        body.dark{
+            color: golden;
+            background-color: darksalmon;
+        }
+        button{
+            display: block;
+            margin: 5px;
+        }
+        .textEntry{
+            margin-top: 12px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>the hobbies quest</h1>
+    <p id="story">find my hobbies</p>
+    <button onclick="dark()">get in the mood</button>
+    <div class="textEntry">if you want to  enter so type your name <input type="text" id="name"></div>
+      <button onclick="finish()">tell me what happend</button>
+          <button onclick="type()"> click me</button>
+      <script>
+        function type(){
+            var personName=document.getElementById("name").value;
+           alert (" that you have entered complete your quest"+personName)
+        }
+        function dark(){
+document.body.className="dark"
+}
+function finish(){
+    document.getElementById("story").innerHTML="you asked me so i told you my hobby is painting  ";
+}
+            </script>
+</body>
+</html>
